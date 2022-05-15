@@ -1,0 +1,12 @@
+<H1>Login!</H1>
+
+<div class = "container">
+    <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div> <!-- ngIf- is Angular attribute-->
+
+    <div>
+        User Name : <input type = "text" name = "username" [(ngModel)] = "username"> <!--ngModle introduces two way dataBinding-->
+        Password  : <input type = "password" name = "password" [(ngModel)] = "password">
+
+        <button (click) = handleLogin() class="btn btn-success">Login</button>
+    </div>
+</div>

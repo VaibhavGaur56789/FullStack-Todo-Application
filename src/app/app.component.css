@@ -1,0 +1,3 @@
+div { /*its scope is restricted to component*/
+    background-color: beige;
+}
