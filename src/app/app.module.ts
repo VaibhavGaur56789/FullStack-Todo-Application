@@ -10,6 +10,7 @@ import { ErrorComponent } from './error/error.component';
 import { ListTodosComponent } from './list-todos/list-todos.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogoutComponent } from './logout/logout.component';
 
 //Every Angular component (@Component) has to be associated with an Angular Module (@NgModule).
 
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     ErrorComponent,
     ListTodosComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    LogoutComponent
   ], 
   imports: [
     BrowserModule,
