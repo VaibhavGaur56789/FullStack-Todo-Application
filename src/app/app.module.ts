@@ -11,6 +11,7 @@ import { ListTodosComponent } from './list-todos/list-todos.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
+import { HttpClientModule } from '@angular/common/http';
 
 //Every Angular component (@Component) has to be associated with an Angular Module (@NgModule).
 
@@ -28,7 +29,8 @@ import { LogoutComponent } from './logout/logout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule  //mandatory for ngModule
+    FormsModule,  //mandatory for ngModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
